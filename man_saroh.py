@@ -206,8 +206,8 @@ def generate_pdf_report(name, age, user_type, mood, recommendation):
     pdf.add_page()
 
     try:
-        font_path_regular = "D:/PYTHON/man_saroha/dejavu-fonts-ttf-2.37/ttf/DejaVuSans.ttf"
-        font_path_bold = "D:/PYTHON/man_saroha/dejavu-fonts-ttf-2.37/ttf/DejaVuSans-Bold.ttf"
+        font_path_regular = "DejaVuSans.ttf"
+        font_path_bold = "DejaVuSans-Bold.ttf"
 
         pdf.add_font("DejaVu", "", font_path_regular, uni=True)
         pdf.add_font("DejaVu", "B", font_path_bold, uni=True)
