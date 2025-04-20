@@ -13,7 +13,7 @@ import hashlib
 
 st.set_page_config(page_title="Manasāroha: Your Mental Wellness Companion", page_icon="🧘", layout="wide")
 
-API_KEY = st.secrets["openrouter_api_key"]
+API_KEY = "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"
 
 # SQLite Database Connection
 def get_db_connection():
