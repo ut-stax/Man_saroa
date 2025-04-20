@@ -13,7 +13,7 @@ import hashlib
 
 st.set_page_config(page_title="Manasāroha: Your Mental Wellness Companion", page_icon="🧘", layout="wide")
 
-API_KEY = "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"
+API_KEY = "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"
 
 # SQLite Database Connection
 def get_db_connection():
@@ -269,7 +269,7 @@ def show_progress_section(email):
     level, current_xp = calculate_level_and_progress(xp)
     badges = get_badges(xp, streak)
 
-    st.markdown("""
+    st.markdown(""" 
         <style>
             .progress-container {
                 background: linear-gradient(145deg, #ffffff, #e6e6e6);
