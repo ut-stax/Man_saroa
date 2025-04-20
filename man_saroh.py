@@ -10,14 +10,24 @@ from datetime import datetime
 import pandas as pd
 import plotly.graph_objects as go
 import hashlib
+import shutil
 
 st.set_page_config(page_title="Manasāroha: Your Mental Wellness Companion", page_icon="🧘", layout="wide")
 
 API_KEY = "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"
 
+# ---------- ✅ SQLite Deployment Fix START ----------
+# Use /tmp for deployment on Streamlit Cloud to avoid database reset
+ORIGINAL_DB_PATH = "manasaroha.db"
+TEMP_DB_PATH = os.path.join("/tmp", "manasaroha.db")
+
+if not os.path.exists(TEMP_DB_PATH):
+    shutil.copy(ORIGINAL_DB_PATH, TEMP_DB_PATH)
+# ---------- ✅ SQLite Deployment Fix END ----------
+
 # SQLite Database Connection
 def get_db_connection():
-    conn = sqlite3.connect('manasaroha.db')
+    conn = sqlite3.connect(TEMP_DB_PATH)
     return conn
 
 # Add user_type column if it does not exist
@@ -45,7 +55,7 @@ def create_tables():
         streak INTEGER DEFAULT 0,
         xp INTEGER DEFAULT 0,
         age INTEGER,
-        user_type TEXT -- Ensure this column is created
+        user_type TEXT
     )''')
 
     cursor.execute(''' 
@@ -64,8 +74,9 @@ def create_tables():
     conn.close()
 
 # Initialize the database
-add_user_type_column()  # Ensure user_type column is present
-create_tables()  # Create the necessary tables
+add_user_type_column()
+create_tables()
+
 
 def extract_mood_score(mood_result):
     mood_map = {
