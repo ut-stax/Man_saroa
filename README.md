@@ -4,8 +4,6 @@ Here’s your **🔥 ultra-professional, visually appealing, and super clean `RE
 
 ---
 
-```markdown
-
 <h1 align="center">🧘‍♀️ Manasāroha</h1>
 
 <p align="center">
