@@ -127,7 +127,4 @@ MIT License © 2025 [UKT]
 Made with mindfulness and tech 🧘‍♂️ by [UKT]  
 
 
-
----
-
 ```
