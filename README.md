@@ -34,23 +34,23 @@ Here’s your **🔥 ultra-professional, visually appealing, and super clean `RE
 
 ## 📸 Screenshots
 
-1. **Login Page: **
+1. **Login Page:**
 
     ![Login_Page](./Screenshot%202025-07-04%20175230.png)
    
-2. **Signup Page: **
+2. **Signup Page:**
    
     ![Signup_page](./Screenshot%202025-07-04%20175237.png)
 
-3. **Working: **
+3. **Working:**
      
     ![Working](./Screenshot%202025-07-04%20175340.png)
 
-4. **Working: **
+4. **Working:**
      
     ![Working](./Screenshot%202025-07-04%20175645.png)
 
-5. **Working: **
+5. **Working:**
    
     ![Working](./Screenshot%202025-07-04%20175700.png)
 
