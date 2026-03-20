@@ -118,7 +118,7 @@ Open an issue or submit a pull request anytime.
 
 ## 📜 License
 
-MIT License © 2025 [UKT]
+MIT License © 2025 [Utkarsh Tripathi]
 
 ---
 
